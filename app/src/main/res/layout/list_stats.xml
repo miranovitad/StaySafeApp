@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/listItem"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="10dp"
+        app:cardBackgroundColor="#e2d2f6"
+        android:layout_weight="1"
+        app:contentPaddingLeft="15dp"
+        app:contentPaddingRight="15dp"
+        app:contentPaddingTop="10dp"
+        app:contentPaddingBottom="10dp"
+        android:layout_marginBottom="7dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:textColor="#231352"
+                android:text="DKI Jakarta"
+                android:id="@+id/txtProvinsi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textSize="14sp"/>
+            <TextView
+                android:textColor="#2d3436"
+                android:text="Berikut ini adalah data covid-19 di Provinsi"
+                android:id="@+id/txtKeterangan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="10sp"
+                android:textStyle="bold"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp">
+                <Button
+                    android:id="@+id/btnKasusPosi"
+                    android:layout_width="0dp"
+                    android:layout_height="25dp"
+                    android:background="@drawable/btn_positif"
+                    android:text="Positif : 11122"
+                    android:textAllCaps="false"
+                    android:textSize="10sp"
+                    android:textAlignment="center"
+                    android:paddingRight="10dp"
+                    android:paddingLeft="10dp"
+                    android:layout_weight="1"
+                    android:textColor="#ffffff"
+                    android:textStyle="bold"/>
+                <Button
+                    android:id="@+id/btnKasusSemb"
+                    android:layout_width="0dp"
+                    android:layout_height="25dp"
+                    android:background="@drawable/btn_negatif"
+                    android:text="Positif : 11122"
+                    android:textAllCaps="false"
+                    android:textSize="10sp"
+                    android:textAlignment="center"
+                    android:paddingRight="10dp"
+                    android:paddingLeft="10dp"
+                    android:layout_weight="1"
+                    android:textStyle="bold"
+                    android:textColor="#ffffff"
+                    android:layout_marginLeft="5dp"/>
+                <Button
+                    android:id="@+id/btnKasusMeni"
+                    android:layout_width="0dp"
+                    android:layout_height="25dp"
+                    android:background="@drawable/btn_meninggal"
+                    android:text="Positif : 11122"
+                    android:textAllCaps="false"
+                    android:textSize="10sp"
+                    android:textAlignment="center"
+                    android:paddingRight="10dp"
+                    android:paddingLeft="10dp"
+                    android:layout_weight="1"
+                    android:textColor="#ffffff"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="5dp"/>
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>
