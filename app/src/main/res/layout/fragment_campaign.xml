@@ -3,12 +3,34 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".FragmentCampaign">
+    tools:context=".FragmentCampaign"
+    android:background="#e2d2f6">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="Campaign" />
+        android:orientation="vertical"
+        android:padding="20dp">
+        <Button
+            android:textColor="#ffffff"
+            android:id="@+id/btnpindah"
+            android:textAllCaps="false"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:background="@drawable/rounded_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Create Campaign"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"/>
+        <ListView
+            android:layout_marginTop="10dp"
+            android:id="@+id/listCampaign"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@null"
+            android:dividerHeight="0dp"/>
+
+    </LinearLayout>
 
 </FrameLayout>

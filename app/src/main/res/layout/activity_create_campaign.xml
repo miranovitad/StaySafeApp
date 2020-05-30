@@ -6,62 +6,197 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".CreateCampaignActivity"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:paddingTop="15dp"
+    android:paddingBottom="10dp"
+    android:paddingRight="40dp"
+    android:paddingLeft="40dp">
 
-    <EditText
-        android:id="@+id/txtCampaignName"
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Campaign Name"/>
+        android:layout_height="wrap_content">
 
-    <EditText
-        android:id="@+id/txtStartDate"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:inputType="date"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
 
-    <EditText
-        android:id="@+id/txtEndDate"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:inputType="date"/>
+            <TextView
+                android:id="@+id/TextView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Create Campaign"
+                android:layout_marginTop="10dp"
+                android:textSize="33sp"
+                android:textColor="#231352"
+                android:textStyle="bold" />
 
-    <EditText
-        android:id="@+id/txtCampaignInfo"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+            <EditText
+                android:id="@+id/txtCampaignName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Campaign Name"
+                android:layout_gravity="center"
+                android:textSize="15sp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:background="@drawable/bordered_form"
+                android:textStyle="bold"
+                android:textColor="#6f35a5"
+                android:layout_marginTop="10dp"
+                android:inputType="textPersonName"
+                android:singleLine="true"/>
 
-    <EditText
-        android:id="@+id/txtCampaignDetail"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:inputType="textMultiLine"/>
+            <EditText
+                android:id="@+id/txtStartDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Start Date"
+                android:layout_gravity="center"
+                android:textSize="15sp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:background="@drawable/bordered_form"
+                android:textStyle="bold"
+                android:textColor="#6f35a5"
+                android:layout_marginTop="10dp"
+                android:inputType="textPersonName"
+                android:singleLine="true"/>
 
-    <Button
-        android:id="@+id/btnUploadCampaignImage"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Upload Foto Kampanye"/>
+            <EditText
+                android:id="@+id/txtEndDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="End Date"
+                android:layout_gravity="center"
+                android:textSize="15sp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:background="@drawable/bordered_form"
+                android:textStyle="bold"
+                android:textColor="#6f35a5"
+                android:layout_marginTop="10dp"
+                android:inputType="textPersonName"
+                android:singleLine="true"/>
 
-    <Button
-        android:id="@+id/btnUploadIdImage"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Upload Foto KTP"/>
+            <EditText
+                android:id="@+id/txtCampaignInfo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Campaign Link"
+                android:layout_gravity="center"
+                android:textSize="15sp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:background="@drawable/bordered_form"
+                android:textStyle="bold"
+                android:textColor="#6f35a5"
+                android:layout_marginTop="10dp"
+                android:inputType="textPersonName"
+                android:singleLine="true"/>
 
-    <EditText
-        android:id="@+id/txtTarget"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+            <EditText
+                android:id="@+id/txtCampaignDetail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textMultiLine"
+                android:hint="Campaign Detail"
+                android:layout_gravity="center"
+                android:textSize="15sp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:background="@drawable/bordered_form"
+                android:textStyle="bold"
+                android:textColor="#6f35a5"
+                android:layout_marginTop="10dp"
+                android:singleLine="true"/>
 
-    <EditText
-        android:id="@+id/txtBankAcc"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+            <ImageView
+                android:layout_marginTop="10dp"
+                android:id="@+id/imgCampaign"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_launcher_background"/>
 
-    <EditText
-        android:id="@+id/txtBankNum"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+            <Button
+                android:id="@+id/btnUploadCampaignImage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Upload Photo"
+                android:layout_gravity="center"
+                android:background="@drawable/bordered_form"
+                android:textColor="@color/colorPrimary"
+                android:textStyle="bold"
+                android:layout_marginTop="5dp"
+                android:textAllCaps="false"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"/>
+
+            <EditText
+                android:id="@+id/txtTarget"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Target"
+                android:layout_gravity="center"
+                android:textSize="15sp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:background="@drawable/bordered_form"
+                android:textStyle="bold"
+                android:textColor="#6f35a5"
+                android:layout_marginTop="10dp"
+                android:singleLine="true"
+                android:inputType="number"/>
+
+            <EditText
+                android:id="@+id/txtBankAcc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Bank Account Name"
+                android:layout_gravity="center"
+                android:textSize="15sp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:background="@drawable/bordered_form"
+                android:textStyle="bold"
+                android:textColor="#6f35a5"
+                android:layout_marginTop="10dp"
+                android:singleLine="true"/>
+
+            <EditText
+                android:inputType="number"
+                android:id="@+id/txtBankNum"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Bank Account Number"
+                android:layout_gravity="center"
+                android:textSize="15sp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:background="@drawable/bordered_form"
+                android:textStyle="bold"
+                android:textColor="#6f35a5"
+                android:layout_marginTop="10dp"
+                android:singleLine="true"/>
+
+            <Button
+                android:text="Create Campaign"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnSubmit"
+                android:layout_gravity="center"
+                android:background="@drawable/rounded_button"
+                android:textColor="#ffffff"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp"
+                android:textAllCaps="false"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"/>
+
+        </LinearLayout>
+
+    </ScrollView>
 
 </LinearLayout>
